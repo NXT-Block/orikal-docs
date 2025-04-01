@@ -23,6 +23,16 @@ This repo is the single source of truth for:
 └── roadmap.md              # Roadmap and feature timeline
 ```
 
+## 📖 Documentation Index
+- 👉 [Vision](./docs/vision.md)
+- 🧱 [Architecture](./docs/architecture.md)
+- 🚀 [Getting Started](./docs/getting-started.md)
+- 🔐 [Backend Overview](./docs/backend-overview.md)
+- ⛓️ [Smart Contracts](./docs/smart-contracts.md)
+- 🖥️ [Frontend Overview](./docs/frontend-overview.md)
+- 🤝 [Contribution Guide](./docs/contribution.md)
+- 🗺️ [Roadmap (Draft)](./docs/roadmap.md)
+
 ## 📦 Repositories
 This documentation complements the following Orikal repos:
 - [`orikal-frontend`](https://github.com/NXT-Block/orikal-frontend) – Frontend UI (open-source)
