@@ -157,5 +157,5 @@ git push origin --delete NXTB-15-front-bootstrap-next-js-app
 | 5 | PR opens → Jira ticket moves to "To Be Reviewed" automatically |
 | 6 | Merge PR → Further transition to "Done" if automation is configured or commit includes `#done` |
 
----
+--- 
 
