@@ -33,6 +33,8 @@ git pull origin work-dev
 git checkout -b doc/NXTB-102-git-jira-workflow
 ```
 
+> ℹ️ To ensure that the branch is correctly linked to the Jira issue and displayed under **Development**, it is recommended to **create the branch directly from the Jira interface**. This guarantees that the branch naming is recognized by Jira and avoids inconsistencies.
+
 ---
 
 ## 🔗 Linking Git to Jira
@@ -68,6 +70,27 @@ Resolves NXTB-15
 ✅ Use them in the PR **title or description**
 
 > 🔁 The ticket will be moved to "To Be Reviewed" on PR open, and potentially to "Done" if a rule is set upon merge.
+
+---
+
+## ✍️ Commit Message Format
+
+To help Jira identify and link your work correctly, follow this simple format when writing your commit messages:
+
+### ✅ Commit Example:
+```bash
+git commit -m "NXTB-55: Add section on branch naming from Jira"
+```
+
+### Format:
+```
+NXTB-XX: Short but descriptive message
+```
+
+- Always begin with the **Jira ticket key** (e.g. `NXTB-55`)
+- Follow it with a colon `:` and a **clear summary** of the commit
+
+> ℹ️ While this does not trigger transitions, it ensures your commits are properly linked in the Jira issue view.
 
 ---
 
@@ -127,12 +150,12 @@ git push origin --delete NXTB-15-front-bootstrap-next-js-app
 
 | Step | Action |
 |------|--------|
-| 1 | Create branch from `dev` or `work-dev` with ticket ID |
-| 2 | Commit and push with ticket reference |
+| 1 | Create branch from `dev` or `work-dev` with ticket ID *(preferably from Jira)* |
+| 2 | Commit and push with ticket reference (include `NXTB-XX` in messages) |
 | 3 | Create a PR targeting `dev` or `work-dev` |
 | 4 | Add ticket key in PR title or description (e.g. `Fixes NXTB-XX`) |
 | 5 | PR opens → Jira ticket moves to "To Be Reviewed" automatically |
-| 6 | Merge PR → Further transition to "Done" if automation is configured |
+| 6 | Merge PR → Further transition to "Done" if automation is configured or commit includes `#done` |
 
 ---
 
